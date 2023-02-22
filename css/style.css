@@ -1,0 +1,64 @@
+* {
+    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Playfair Display', serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Quicksand', sans-serif;
+    font-family: 'Shantell Sans', cursive;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+/* Header qismini yasashni boshlaymiz */
+
+header {
+    height: 60px;
+    line-height: 60px;
+    background-color: #6A7D7C;
+}
+
+.navbar {
+    position: fixed;
+    max-width: 20000px;
+    width: 100%;
+}
+
+.navbar-logo {
+    font-size: 35px;
+    margin-left: 100px;
+    color: #fff;
+    text-transform: uppercase;
+    float: left;
+}
+
+.navbar-links {
+    float: right;
+    display: flex;
+    margin-right: 100px;
+}
+
+.navbar-links a {
+    color: #fff;
+    text-transform: uppercase;
+    margin-right: 20px;
+}
+
+.navbar-links a:hover {
+    transition: .3s;
+    border-bottom: 4px solid #3f5160;
+    /* background-color: #819392; */
+}
+
+/* Navbar qismini responsive qilamiz */
+
+/* For Phone */
+
+@media only screen and (max-width: 1300px) {
+    .navbar-links {
+        background-color: #6A7D7C;
+        float: none;
+        margin-left: 30px;
+    }
+}
