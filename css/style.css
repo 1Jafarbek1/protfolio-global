@@ -39,26 +39,56 @@ header {
     margin-right: 100px;
 }
 
-.navbar-links a {
+.navbar-links .links {
     color: #fff;
     text-transform: uppercase;
     margin-right: 20px;
 }
 
-.navbar-links a:hover {
+.navbar-links .links:hover {
     transition: .3s;
     border-bottom: 4px solid #3f5160;
-    /* background-color: #819392; */
 }
 
 /* Navbar qismini responsive qilamiz */
 
-/* For Phone */
+/* For Tablet */
 
 @media only screen and (max-width: 1300px) {
     .navbar-links {
         background-color: #6A7D7C;
+        margin-right: 30px;
+    }
+}
+
+/* For Phone  */
+
+@media only screen and (max-width: 500px) {
+    .navbar-logo {
+        margin-left: 140px;
         float: none;
-        margin-left: 30px;
+        font-size: 25px;
+    }
+    .navbar-links {
+        margin-right: 0px;
+        font-size: 10px;
+        float: none;
+    }
+    .navbar-links .links {
+        font-family: 'Playfair Display', serif;
+        letter-spacing: 1px;
+        font-size: 12px;
+        margin-left: 7px;
+        margin-right:10px;
+    }
+
+    .fa-moon {
+        line-height: 60px;
+        color: #fff;
+        margin-left: 20px;
+    }
+    .fa-moon:hover {
+        color: #000;
+        transition: .5s;
     }
 }
