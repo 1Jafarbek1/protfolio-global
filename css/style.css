@@ -39,10 +39,13 @@ header {
     margin-right: 100px;
 }
 
+.mr-30 {
+    margin-right: 30px;
+}
+
 .navbar-links .links {
     color: #fff;
     text-transform: uppercase;
-    margin-right: 20px;
 }
 
 .navbar-links .links:hover {
@@ -50,22 +53,76 @@ header {
     border-bottom: 4px solid #3f5160;
 }
 
+.navbar-icon {
+    display: flex;
+    float: right;
+}
+
+.fa-moon {
+    float: right;
+    line-height: 60px;
+    color: #fff;
+    margin-left: 50px;
+}
+
+.fa-moon:hover {
+    color: #000;
+    transition: .5s;
+}
+
 /* Navbar qismini responsive qilamiz */
 
 /* For Tablet */
 
 @media only screen and (max-width: 1300px) {
+    .navbar-logo {
+        margin-left: 40px;
+    }
     .navbar-links {
         background-color: #6A7D7C;
         margin-right: 30px;
+    }
+    .fa-moon {
+        color: #fff;
+        margin-left: 20px;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .navbar-logo {
+        margin-left: 40px;
+        float: none;
+        font-size: 25px;
+    }
+    .navbar-links {
+        font-size: 10px;
+        float: none;
+    }
+    .navbar-links .links {
+        font-family: 'Playfair Display', serif;
+        letter-spacing: 1px;
+        font-size: 10px;
+        margin-left: 7px;
+        margin-right: 0px;
+    }
+
+    .fa-moon {
+        background-color: #6A7D7C;
+        line-height: 60px;
+        color: #fff;
+        margin-left: 20px;
+    }
+    .fa-moon:hover {
+        color: #000;
+        transition: .5s;
     }
 }
 
 /* For Phone  */
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 350px) {
     .navbar-logo {
-        margin-left: 140px;
+        margin-left:90px;
         float: none;
         font-size: 25px;
     }
@@ -77,9 +134,9 @@ header {
     .navbar-links .links {
         font-family: 'Playfair Display', serif;
         letter-spacing: 1px;
-        font-size: 12px;
+        font-size: 10px;
         margin-left: 7px;
-        margin-right:10px;
+        margin-right: 0px;
     }
 
     .fa-moon {
